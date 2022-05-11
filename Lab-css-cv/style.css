@@ -9,11 +9,15 @@
   grid-template-columns: 1fr 2fr;
   justify-self: center;
   margin-left: 20%;
-  border: 2px solid gold;
+  border: 2px solid rgb(220, 207, 136);
 }
 .container-photo,
 .container-contact {
   background-color: #01385f;
+}
+.personla-information,
+.container-experience {
+  background-color: #fffff7;
 }
 .container-photo img {
   margin-top: 15%;
