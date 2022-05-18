@@ -39,18 +39,31 @@ const deleteContac = (arr, nameContact) => {
   });
   return lista;
 };
+//update contact
+/* arr = lista de contactos
+nombreContact = busqueda del contacto a modificar
+item = campo a modificar
+newItem = nuevo campo */
+const updateContact = (arr, nombreContact, item, newItem) => {
+  arr.find((element) => {
+    if (element.nombres === nombreContact) {
+      element[item] = newItem;
+    }
+  });
+};
 
 //print contacs list
 const printContacts = (list) => {
   console.log(list);
 };
-
+//Agregar contactos a la lista
 addContac("1", "Cesar", "Ticona", 71207497, "La Paz", "Alto tejar");
 addContac("2", "Adrian", "Flores", 69207497, "Cochabamba", "El Alto");
 addContac("3", "Luca", "Torres", 79017497, "La Paz", "Miraflores");
 addContac("4", "Marcelo", "Mamani", 77347497, "La Paz", "Obrajes");
-
-console.log(contactList);
-/* console.log(contactList1); */
-
+// imprimir la lista mas borrar un contacto de la lista
 printContacts(deleteContac(contactList, "Luca"));
+//actualizar un contacto
+updateContact(contactList, "Cesar", "nombres", "Julio");
+//imprime lista de contactos
+console.log(contactList);
