@@ -1,4 +1,4 @@
-![screenshot](/imgs/pick-hooks.png)
+![Image](./imgs/pick-hooks.png)
 
 # Getting Started with Create React App
 
