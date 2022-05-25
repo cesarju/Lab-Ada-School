@@ -2,7 +2,7 @@ import "../App.css";
 import React from "react";
 import { useState, useEffect } from "react";
 export const Contador = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(100);
   useEffect(() => {
     console.log(`El contador va en cuenta ${counter}`);
   }, [counter]);
